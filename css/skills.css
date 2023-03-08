@@ -1,0 +1,93 @@
+/* Displays None */
+
+.detail_skills_left {
+    display: none;
+}
+
+.detail_skills_right {
+    display: none;
+}
+
+.my_skills {
+    background-color: #212121;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#subtitles_skills {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.tecnologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tecnologies figure:last-child {
+    grid-column-end: span 2 
+}
+
+.icons_tecnologies {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.tecnologies > *:nth-child(5) img {
+    margin-top: 1.5rem;
+}
+
+.icons_caption {
+    color: var(--txt-branco);
+}
+
+.tecnologies > *:nth-child(5) figcaption {
+    margin-top: 1.1rem;
+}
+
+.tecnologies > *:nth-child(7) figcaption {
+    margin-top: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .content_skills {
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .my_skills {
+        align-items: center;
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .content_skills {
+        display: flex;
+    }
+
+    .detail_skills_left {
+        display: block;
+        margin-right: 5rem;
+    }
+
+    #subtitles_skills {
+        padding: 2.5rem 0;
+        margin: 0;
+    }
+
+    .tecnologies {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+    .icons_tecnologies {
+        padding: 0 1rem;
+    }
+
+    .detail_skills_right {
+        display: block;
+        margin-left: 5rem;
+    }
+}

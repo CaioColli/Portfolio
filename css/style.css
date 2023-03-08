@@ -1,0 +1,34 @@
+@import url("header.css");
+@import url("presentation.css");
+@import url("abaut.css");
+@import url("skills.css");
+@import url("formation.css");
+@import url("projects.css");
+@import url("email.css");
+@import url("footer.css");
+
+:root {
+    --txt-azul : #2490C1;
+    --txt-branco : #ffffff
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #292929;
+    font-family: 'PT Sans';
+    font-size: 1.125rem;
+}
+
+.subtitles {
+    color: var(--txt-branco);
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .subtitles {
+        font-size: 2.5rem;
+    }
+}

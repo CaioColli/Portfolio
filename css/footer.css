@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.icons_footer {
+    width: 2.5rem;
+    padding: 0 0.5rem;
+}
+
+.Copyright {
+    margin-top: 0.8rem;
+}
+
+.paragraph_footer {
+    color: var(--txt-branco);
+}

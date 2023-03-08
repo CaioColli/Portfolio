@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="icon" href=""> -->
+    <title>Portfólio Caio Colli</title>
+</head>
+
+<body>
+    <header>
+        <div class="content_header">
+            <a href=""><img src="imgs/illustrations/logotipo.png"
+                alt="Ilustração com montanhas de fundo com tom azulado e um c centralizado na imagem"
+                class="img-logo" /></a>
+            <button id="burguer" onclick="btnNavbar()">
+                <img src="imgs/icons/burguer.png" alt="icone de um menu hamburguer" class="img-burguer" />
+            </button>
+
+            <!-- 768px ++ -->
+            <div class="nav">
+                <ul class="navigation">
+                    <li class="content_navigation" id="navHome">Home</li>
+                    <li class="content_navigation" id="navAbaut">Sobre mim</li>
+                    <li class="content_navigation" id="navSkills">Habilidades</li>
+                    <li class="content_navigation" id="navFormation">Formação</li>
+                    <li class="content_navigation" id="navProjects">Projetos</li>
+                    <li class="content_navigation" id="navContact">Contato</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navbar">
+            <ul class="list_navbar">
+                <div>
+                    <button onclick="btnCloseNavbar()" id="closeNav">
+                        <img src="imgs/icons/close.png" alt="icone de um x para fechar o navbar" class="img-close" />
+                    </button>
+                </div>
+
+                <div class="mobile_nav">
+                    <ul class="mobile_navigation">
+                        <a href="#presentation">
+                            <li class="content_li">Home</li>
+                        </a>
+                        <a href="#abaut">
+                            <li class="content_li">Sobre mim</li>
+                        </a>
+                        <a href="#my_skills">
+                            <li class="content_li">Habilidades</li>
+                        </a>
+                        <a href="#formation">
+                            <li class="content_li">Formação</li>
+                        </a>
+                        <a href="#projects">
+                            <li class="content_li">Projetos</li>
+                        </a>
+                        <a href="#email_contact">
+                            <li class="content_li">Contato</li>
+                        </a>
+                    </ul>
+                </div>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="presentation" id="presentation">
+        <div class="content_presentation">
+            <div>
+                <div>
+                    <h2 class="subtitles">Olá! Sou</h2>
+                    <h1 class="name_dev">Caio Colli</h1>
+
+                    <div class="animatedDev">
+                        <span id="bar"></span>
+                        <span id="txtDev"></span>
+                        <span id="txtFront"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn-cv">
+                        <a href="cvv/Caio Colli-CV.pdf" download="" class="txt-cv">Baixar CV</a>
+                    </button>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/caio-colli-75a431240/" target="_blank"><img
+                                src="imgs/icons/linkedin.png" alt="icone linkedin" class="icon" /></a>
+                        <a href="https://github.com/CaioColli" target="_blank"><img src="imgs/icons/github.png"
+                                alt="Icone GitHub" class="icon" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="imgs/illustrations/ilustracao1.png"
+                    alt="Uma ilustração de um homem sentado em frente a um computador"
+                    class="presentation_illustration">
+            </div>
+        </div>
+
+        <div class="waves">
+            <img src="imgs/details/waves.png" alt="Uma imagem ilustrativa de ondas" />
+        </div>
+
+        <div class="waves_desk">
+            <img src="imgs/details/waves_desk.png" alt="Uma imagem ilustrativa de ondas">
+        </div>
+
+    </section>
+
+    <section class="abaut" id="abaut">
+        <div class="content_about">
+
+            <div class="texts_abaut">
+
+                <h2 class="subtitles">Sobre mim</h2>
+                <h3 class="name_dev_abaut">Caio Colli</h3>
+
+                <p class="p_abaut">
+                    Sou estudante do curso Análise e Desenvolvimento de Sistemas focado
+                    em desenvolvimento front-end. Aspiro conseguir meu primeiro emprego
+                    como programador para adquirir experiência, conhecimento e e
+                    fortalecer minha vida profissional.
+                </p>
+
+                <p class="p_abaut">
+                    Sou uma pessoa entusiasta, com competências em trabalho em equipe,
+                    comunicação, assertivo, responsável e proativo, gosto de sempre
+                    aprender coisas novas e sempre me superar-me continuamente.
+                </p>
+            </div>
+
+            <div>
+                <img src="imgs/illustrations/ilustracao2.png" alt="Uma ilustração de uma mão teclando"
+                    class="abaut_ilustration">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="my_skills" id="my_skills">
+
+        <div class="content_skills">
+            <div class="detail_skills_left">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+
+            <div>
+                <h2 class="subtitles" id="subtitles_skills">Habilidades</h2>
+
+                <div class="tecnologies">
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/html.png" alt="icone Html" />
+                        <figcaption class="icons_caption">HTML</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/css.png" alt="icone Css" />
+                        <figcaption class="icons_caption">CSS</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/js.png" alt="icone JavaScript" />
+                        <figcaption class="icons_caption">JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/bootstrap.png" alt="icone Bootstrap" />
+                        <figcaption class="icons_caption">BootStrap</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/tail.png" alt="icone Tailwind" />
+                        <figcaption class="icons_caption">Tailwind</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/react.png" alt="icone React" />
+                        <figcaption class="icons_caption">React Js</figcaption>
+                    </figure>
+
+                    <figure class="icons_tecnologies">
+                        <img src="imgs/icons/figma.png" alt="icone Figma" />
+                        <figcaption class="icons_caption">Figma</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="detail_skills_right">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="formation" id="formation">
+        <div class="content_formation">
+
+            <div class="detail_formation_left">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+
+            <div>
+                <h2 class="subtitles">Formações</h2>
+            </div>
+
+            <div class="formation_cards">
+
+                <div class="formation_card">
+                    <figure class="formation_figure">
+                        <img src="imgs/icons/alura.png" alt="Imagem da instituição Alura" />
+                        <figcaption class="formation_caption">
+                            Desenvolvimento Front-end
+                        </figcaption>
+                        <figcaption class="formation_caption_date">
+                            2022 - Em curso
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="formation_card">
+                    <figure class="formation_figure">
+                        <img src="imgs/icons/descomplica.png" alt="Imagem da faculdade Descomplica" />
+                        <figcaption class="formation_caption">
+                            Análise e desenvolvimento de sistemas
+                        </figcaption>
+                        <figcaption class="formation_caption_date">
+                            2023 - Em curso
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="formation_card">
+                    <figure class="formation_figure">
+                        <img src="imgs/icons/unip.png" alt="Imagem da faculdade Unip" />
+                        <figcaption class="formation_caption">Logística</figcaption>
+                        <figcaption class="formation_caption_date">
+                            2020 - 2022
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="detail_formation_right">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="content_projects">
+            <h2 class="subtitles" id="subtitle_projects">Projetos</h2>
+
+            <div class="project_cards">
+                <div class="project_card">
+                    <figure>
+                        <img src="imgs/projects/project1.png" alt="Imagem de um projeto das cantoras AnaVitória"
+                            class="img_project" />
+                        <figcaption class="project_caption">
+                            FanPage AnaVitoria
+                        </figcaption>
+                    </figure>
+                    <p class="project_paragraph">Uma Fanpage das cantoras AnaVitoria contendo um player de música e as
+                        redes
+                        sociais das cantoras.</p>
+
+                    <div class="project_buttons">
+                        <a href="https://caiocolli.github.io/FanPage-AnaVitoria/" target="_blank"><button
+                                class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/olho.png" alt="Icone de olho" class="btn_img">
+                                    <figcaption class="btn_caption">Demo</figcaption>
+                                </figure>
+                            </button></a>
+                        <a href="https://github.com/CaioColli/FanPage-AnaVitoria" target="_blank"><button
+                                class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/github.png" alt="Icone GitHub" class="btn_img">
+                                    <figcaption class="btn_caption">Repo</figcaption>
+                                </figure>
+                            </button></a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <figure>
+                        <img src="imgs/projects/project2.png" alt="Imagem de um projeto das cantoras AnaVitória"
+                            class="img_project" />
+                        <figcaption class="project_caption">
+                            Portfólio
+                        </figcaption>
+                    </figure>
+                    <p class="project_paragraph">Meu portfólio pessoal, onde se encontram alguns de meus projetos
+                        principais, minhas habilidades técnicas e um pouco sobre minha formação.</p>
+
+                    <div class="project_buttons">
+                        <a href="" target="_blank"><button class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/olho.png" alt="Icone de olho" class="btn_img">
+                                    <figcaption class="btn_caption">Demo</figcaption>
+                                </figure>
+                            </button></a>
+                        <a href="" target="_blank"><button class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/github.png" alt="Icone GitHub" class="btn_img">
+                                    <figcaption class="btn_caption">Repo</figcaption>
+                                </figure>
+                            </button></a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <figure>
+                        <img src="imgs/projects/project3.png" alt="Imagem de um projeto das cantoras AnaVitória"
+                            class="img_project" />
+                        <figcaption class="project_caption">
+                            LetsCalc
+                        </figcaption>
+                    </figure>
+                    <p class="project_paragraph">Uma calculadora desenvolvida com JavaScript puro Html e Css.</p>
+
+                    <div class="project_buttons">
+                        <a href="https://caiocolli.github.io/LetsCalc/" target="_blank"><button class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/olho.png" alt="Icone de olho" class="btn_img">
+                                    <figcaption class="btn_caption">Demo</figcaption>
+                                </figure>
+                            </button></a>
+                        <a href="https://github.com/CaioColli/LetsCalc" target="_blank"><button class="project_btn">
+                                <figure class="figure_project">
+                                    <img src="imgs/icons/github.png" alt="Icone GitHub" class="btn_img">
+                                    <figcaption class="btn_caption">Repo</figcaption>
+                                </figure>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="https://github.com/CaioColli?tab=repositories" target="_blank">
+                    <h3 class="more_projects">Ver mais projetos</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="email_contact" id="email_contact">
+
+        <div class="email_content">
+            <div class="detail_email_left">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+
+            <div>
+                <div class="content_email">
+                    <h2 class="subtitles">Contato</h2>
+                    <p class="paragraphs_sub_email">Preencha o formulário que entrarei em contato assim que possível</p>
+                </div>
+
+                <form target="_blank" action="https://formsubmit.co/caiocolli22@gmail.com" method="POST">
+                    <div class="form_group">
+                        <input type="text" name="Nome" placeholder="Digite seu nome" required class="form_name">
+                        <input type="email" name="Email" placeholder="exemplo@email.com" required class="form_email">
+                        <input type="text" name="Assunto" placeholder="Assunto" required class="form_subject">
+
+                        <textarea name="Mensagem" placeholder="Mensagem" class="form_text-area" rows="10"></textarea>
+
+                        <button type="submit" class="btn_sendEmail">Enviar email</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="detail_email_right">
+                <img src="imgs/details/detalhe.png" alt="imagem decorativa de pontos">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="https://github.com/CaioColli" target="_blank"><img src="imgs/icons/github.png" alt="icone GitHub"
+                    class="icons_footer"></a>
+            <a href="https://www.linkedin.com/in/caio-colli-75a431240/" target="_blank"><img
+                    src="imgs/icons/linkedin.png" alt="icone linkedin" class="icons_footer"></a>
+            <a href="https://www.instagram.com/cai0_0colli/" target="_blank"><img src="imgs/icons/insta.png"
+                    alt="icone Instagram" class="icons_footer"></a>
+            <a href="https://wa.me/5519992702740" target="_blank"><img src="imgs/icons/whatsapp.png"
+                    alt="icone Whatsapp" class="icons_footer"></a>
+
+            <div class="Copyright">
+                <p class="paragraph_footer">Copyright © | Coded with by Caio Colli</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

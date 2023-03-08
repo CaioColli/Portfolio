@@ -1,0 +1,50 @@
+/* Displays None */
+
+.abaut_ilustration {
+    display: none;
+}
+
+.abaut {
+    text-align: center;
+    margin: 10rem 0 ;
+}
+
+.name_dev_abaut {
+    color: var(--txt-azul);
+    font-size: 1.5rem;
+    padding: 2.5rem 0;
+}
+
+.texts_abaut {
+    margin: 0 auto;
+    width: 22rem;
+}
+
+.p_abaut {
+    color: var(--txt-branco);
+    font-size: 1.125rem;
+    padding: 0.8rem 0;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .name_dev_abaut {
+        font-size: 2rem;
+    }
+
+    .p_abaut {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .content_about {
+        display: flex;
+        margin-right: 25rem;
+    }
+    
+    .abaut_ilustration {
+        display: block;
+        margin-top: 5rem;
+    }
+}
