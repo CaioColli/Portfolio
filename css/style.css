@@ -22,7 +22,7 @@ body {
     font-size: 1.125rem;
 }
 
-.subtitles {
+.subtitles, .subtitles_ {
     color: var(--txt-branco);
     font-size: 2rem;
 }
@@ -31,6 +31,9 @@ body {
     .subtitles {
         font-size: 2.5rem;
     }
+}
+
+@media screen and (min-width: 1366px) {
 }
 
 .subtitles_desk {
