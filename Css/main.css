@@ -258,6 +258,7 @@
 .sec-inicial .conteudo-inicial-direito .ilustracoes-principal {
   position: absolute;
   left: -440px;
+  top: -10px;
 }
 .sec-inicial .conteudo-inicial-direito .ilustracoes-principal .ilustracao-desktop {
   height: 100vh;
