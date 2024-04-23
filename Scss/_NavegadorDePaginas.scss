@@ -1,0 +1,38 @@
+.nav-paginas {
+    display: flex;
+    position: fixed;
+    right: 24px;
+    top: 40%;
+    z-index: 5;
+    div {
+        display: flex;
+        flex-direction: column;
+        span {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 16px 0;
+        }
+    }
+
+    .barra-nav {
+        background-color: rgb(64,64,64,50%);
+        height: 200px;
+        margin-left: 16px;
+        position: relative;
+        width: 2px;
+
+        .indicador-barra {
+            position: absolute;
+            width: 3px;
+            right: 1px;
+            height: 45px;
+            background-color: #404040;
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .nav-paginas {
+        display: none;
+    }
+}

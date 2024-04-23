@@ -1,0 +1,480 @@
+.sec-projetos {
+    background-color: #AE8FDB;
+    height: 110vh;
+
+    .conteudo-projetos {
+        display: flex;
+        padding-top: 160px;
+        position: relative;
+        width: 100%;
+
+        .apresentacao-projetos {
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            margin-left: 200px;
+
+            .titulo-projetos {
+                display: flex;
+                flex-direction: column;
+                max-width: 350px;
+
+                h2 {
+                    color: #404040;
+                    font-size: 4rem;
+                    font-weight: 900;
+                }
+            }
+
+            .btn-ancora {
+                a {
+                    width: 0;
+
+                    button {
+                        align-items: center;
+                        background-color: #404040;
+                        border-radius: 20px;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        height: 60px;
+                        justify-content: center;
+                        margin-top: 17px;
+                        position: relative;
+                        width: 120px;
+
+                        .svg-btn {
+                            position: absolute;
+                            transition: 0.5s;
+                        }
+
+                        &:hover .svg-btn {
+                            rotate: 90deg;
+                        }
+
+                        .texto-btn {
+                            color: #ffff;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projetos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 120px;
+            max-width: 634px;
+            position: relative;
+
+            @mixin formatacao-cards {
+                header {
+                    background-color: rgb(99, 97, 167, 70%);
+                    opacity: 0;
+                    padding: 10px 0 10px 15px;
+                    position: absolute;
+                    width: 100%;
+
+                    span {
+                        color: #ffff;
+                        font-weight: bold;
+                    }
+                }
+
+                .msg-em-andamento {
+                    background-color: rgb(99, 97, 167, 70%);
+                    opacity: 1;
+                    padding: 10px 0 10px 15px;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 81px;
+                    opacity: 1;
+
+                    span {
+                        color: #ffff;
+                    }
+                }
+
+                .bg {
+                    display: block;
+                    height: 250px;
+                }
+
+                footer {
+                    align-content: center;
+                    background-color: #6FDCBF;
+                    display: flex;
+                    flex-direction: column;
+                    height: 81px;
+                    justify-content: center;
+
+                    div {
+                        margin-left: 15px;
+
+                        h4 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            margin-top: 4px
+                        }
+                    }
+                }
+            }
+
+            a {
+                .card {
+                    background-color: #ffff;
+                }
+
+                .card-menor {
+                    @include formatacao-cards;
+                    border-radius: 15px;
+                    background-size: auto;
+                    color: #404040;
+                    height: 331px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 250px;
+                    z-index: 2;
+
+                    .msg-em-andamento {
+                        display: none;
+                    }
+                }
+
+                .card-maior {
+                    @include formatacao-cards;
+                    border-radius: 15px;
+                    color: #404040;
+                    height: 331px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 360px;
+                    z-index: 2;
+                }
+
+                &:nth-of-type(1) .card-menor {
+                    background-image: url('./../images/boxBank.png');
+                    margin: 0 24px 24px 0;
+                }
+
+                &:nth-of-type(2) .card-maior {
+                    background-image: url('./../images/financas.png');
+                    background-repeat: no-repeat;
+                }
+
+                &:nth-of-type(3) .card-maior {
+                    background-image: url('./../images/burguerHouse.png');
+                    background-position: -50px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    .msg-em-andamento {
+                        opacity: 1;
+                    }
+                }
+
+                &:nth-of-type(4) .card-menor {
+                    background-image: url('./../images/store.png');
+                    margin-left: 24px;
+                }
+
+                &:hover .card-menor {
+                    header {
+                        opacity: 1;
+                    }
+                }
+
+                &:hover .card-maior {
+                    header {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .cacto {
+                position: absolute;
+                right: -40px;
+                top: 315px;
+                z-index: 1;
+            }
+
+            .balao-cacto {
+                position: absolute;
+                right: -310px;
+                top: 240px;
+                z-index: 1;
+
+                .cacto-esquerdo,
+                .cacto-direito,
+                .escrita-balao {
+                    fill: transparent;
+                    stroke-width: 1px;
+                    stroke: #404040;
+                    stroke-dasharray: 200;
+                    stroke-dashoffset: 200;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 900px) {
+    .sec-projetos {
+        height: 100%;
+
+        .conteudo-projetos {
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+
+            .apresentacao-projetos {
+                align-items: center;
+                margin: 0;
+                margin-bottom: 30px;
+
+                .titulo-projetos {
+                    align-items: center;
+                    max-width: 900px;
+                    margin: 0;
+    
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .projetos {
+                flex-direction: column;
+                margin: 0;
+
+                @mixin formatacao-cards {
+                    header {
+                        opacity: 1;
+                    }
+
+                    .msg-em-andamento {
+                        bottom: 71px;
+                    }
+
+                    .bg {
+                        height: 230px;
+                    }
+
+                    footer {
+                        width: 100%;
+
+                        div {
+                            margin-left: 15px;
+
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+
+                            p {
+                                margin-top: 4px
+                            }
+                        }
+                    }
+                }
+
+                a {
+
+                    .card-menor,
+                    .card-maior {
+                        @include formatacao-cards;
+                        height: 301px;
+                        width: 330px;
+                    }
+
+                    &:nth-child(1) .card {
+                        margin: 0;
+                        margin-bottom: 16px;
+                    }
+
+                    &:nth-child(3) .card {
+                        margin-top: 16px;
+                    }
+
+                    &:nth-child(4) .card {
+                        margin: 0;
+                        margin-top: 16px;
+                    }
+                }
+
+                .cacto {
+                    display: none;
+                }
+
+                .balao-cacto {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .sec-projetos {
+        .conteudo-projetos {
+            .apresentacao-projetos {
+                .titulo-projetos {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1366px) {
+    .sec-projetos {
+        height: 100%;
+
+        .conteudo-projetos {
+            padding: 80px 0;
+
+            .apresentacao-projetos {
+                margin-left: 45px;
+
+                .titulo-projetos {
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            .projetos {
+                margin-left: 16px;
+
+                @mixin formatacao-cards {
+                    header {
+                        opacity: 1;
+                    }
+
+                    .msg-em-andamento {
+                        bottom: 71px;
+                    }
+
+                    .bg {
+                        height: 230px;
+                    }
+
+                    footer {
+                        width: 100%;
+
+                        div {
+                            margin-left: 15px;
+
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+
+                            p {
+                                margin-top: 4px
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    .card-menor {
+                        @include formatacao-cards;
+                        height: 301px;
+                        width: 220px;
+                    }
+
+                    .card-maior {
+                        @include formatacao-cards;
+                        height: 301px;
+                        width: 330px;
+                    }
+                }
+
+                .cacto {
+                    display: none;
+                }
+
+                .balao-cacto {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1650px) {
+    .sec-projetos {
+        height: 100%;
+
+        .conteudo-projetos {
+            padding: 80px 0;
+
+            .apresentacao-projetos {
+                margin-left: 45px;
+            }
+
+            .projetos {
+                margin-left: 5%;
+
+                @mixin formatacao-cards {
+                    .msg-em-andamento {
+                        bottom: 71px;
+                    }
+
+                    .bg {
+                        height: 230px;
+                    }
+
+                    footer {
+                        width: 100%;
+
+                        div {
+                            margin-left: 15px;
+
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+
+                            p {
+                                margin-top: 4px
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    .card-menor {
+                        @include formatacao-cards;
+                        height: 301px;
+                        width: 220px;
+                    }
+
+                    .card-maior {
+                        @include formatacao-cards;
+                        height: 301px;
+                        width: 330px;
+                    }
+                }
+
+                .cacto {
+                    right: 15px;
+                    top: 285px;
+                }
+
+                .balao-cacto {
+                    right: -245px;
+                    top: 220px;
+                }
+            }
+        }
+    }
+}

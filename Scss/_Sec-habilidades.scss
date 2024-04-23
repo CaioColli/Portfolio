@@ -1,0 +1,167 @@
+.sec-habilidades {
+    height:100%;
+    background-color: #FEF8B4;
+    padding: 160px 0;
+    .conteudo-habilidades {
+        margin: 0 auto;
+        max-width: 50%;
+        .sobre-habilidades {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+            text-align: center;
+            width: 100%;
+
+            .frase-motivacional {
+                color: rgb(64, 64, 64, 50%);
+                opacity: 0;
+            }
+
+            h2 {
+                font-size: 4rem;
+                padding: 16px 0;
+                width: 850px;
+            }
+
+            p {
+                color: #404040;
+                display: flex;
+                justify-content: center;
+                width: 560px;
+
+                &:nth-child(4) {
+                    padding: 16px 0;
+                }
+
+                span {
+                    .svg-linkedin {
+                        height: 16px;
+                    }
+                }
+
+                a {
+                    color: #0A66C2;
+                    padding-right: 6px;
+                }
+            }
+        }
+
+        .habilidades {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div {
+                opacity: 0;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                padding: 32px 64px;
+                
+                .svg-habilidades {
+                    margin-bottom: 8px;
+                    max-height: 60px;
+                    max-width: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 460px) {
+    .sec-habilidades {
+        height: 100%;
+        .conteudo-habilidades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+            .sobre-habilidades {
+                padding: 0;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    max-width: 350px;
+                }
+            }
+    
+            .habilidades {
+                width: 350px;
+
+                div {
+                   padding: 24px 24px; 
+
+                   .svg-habilidades {
+                    max-width: 40px;
+                    max-height: 40px;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 900px) {
+    .sec-habilidades {
+        height: 100%;
+        .conteudo-habilidades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+            .sobre-habilidades {
+                padding: 0;
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    max-width: 400px;
+                }
+            }
+    
+            .habilidades {
+                width: 450px;
+
+                div {
+                   padding: 24px 24px; 
+
+                   .svg-habilidades {
+                    max-width: 40px;
+                    max-height: 40px;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1366px) {
+    .sec-habilidades {
+        height: 100%;
+        .conteudo-habilidades {
+            padding: 80px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .sobre-habilidades {
+                padding: 0;
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+    
+            .habilidades {
+                width: 100vh;
+            }
+        }
+    }
+}
