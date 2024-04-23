@@ -499,6 +499,9 @@
   font-size: 4rem;
   font-weight: 900;
 }
+.sec-projetos .conteudo-projetos .apresentacao-projetos .btn-ancora {
+  display: none;
+}
 .sec-projetos .conteudo-projetos .apresentacao-projetos .btn-ancora a {
   width: 0;
 }
